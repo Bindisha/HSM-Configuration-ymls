@@ -1,2 +1,18 @@
 server:
   port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://3.109.189.129:15432/postgres_docker_db?currentSchema=hsm-doctor
+    username: sachin19927
+    password: Sachin@123
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
